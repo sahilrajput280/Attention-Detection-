@@ -1,46 +1,56 @@
-# AIML Model Collection 🚀
+# 🎯 Attention Detection - AIML Model Collection
 
-This repository contains deep learning and computer vision model files, training scripts, and utility functions for AI/ML experimentation and deployment.
-
----
-
-## 📂 Repository Structure
-
-AIML/
-├── DATA/ # Dataset folder (structure private or custom)
-├── best_resnet50.pth # Trained ResNet50 model weights
-├── yolov5s.pt # YOLOv5 small pre-trained weights
-├── yolov8m.pt # YOLOv8 medium pre-trained weights
-├── train_model.py # Script to train models on your dataset
-├── test.py # Script to test trained models
-├── save_photo.py # Utility to capture and save photos for datasets
-├── predict_webcam.py # Predict objects in real-time using webcam
-├── newpredict_webcam.py # Updated webcam prediction script
+This repository contains a collection of deep learning and computer vision models focused on attention detection using webcam input. It includes training scripts, prediction modules, and pre-trained models to support experimentation and deployment of AI/ML solutions.
 
 ---
 
-## Features
+## 📁 Project Structure
 
-✅ **Object Detection**: YOLOv5 & YOLOv8 models for real-time detection tasks.  
-✅ **Classification**: ResNet50 for image classification tasks.  
-✅ **Training Pipelines**: Easily train on your dataset with `train_model.py`.  
-✅ **Real-Time Webcam Prediction** for quick testing and demos.  
-✅ **Dataset Utilities** for capturing and saving photos.
+Attention-Detection-/
+│
+├── DATA/ # Dataset folder (not included)
+│
+├── best_resnet50.pth # Pre-trained ResNet50 model
+├── yolov5s.pt # YOLOv5 small model weights
+├── yolov8m.pt # YOLOv8 medium model weights
+│
+├── newpredict_webcam.py # New version of webcam prediction script
+├── predict_webcam.py # Webcam attention prediction script
+├── save_photo.py # Captures and saves webcam images
+├── test.py # Test script for model validation
+├── train_model.py # Model training script
+│
+├── README.md # Project documentation
 
 ---
 
-## Setup
+## 🚀 Features
 
-1️⃣ **Clone this repository**:
-git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
-cd YOUR-REPO-NAME
-  
-2️⃣ Install dependencies:
-pip install -r requirements.txt
-(If requirements.txt is not present, let me know to generate one for your environment.)
+- Real-time attention detection using webcam
+- Custom model training pipeline (ResNet, YOLO)
+- Pre-trained models included
+- Modular scripts for training, testing, and inference
+- Easy integration with new data
 
-3️⃣ Run training:
-python train_model.py
+---
 
-4️⃣ Run webcam prediction:
-python predict_webcam.py
+## 🛠️ Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/sahirajput280/Attention-Detection-.git
+   cd Attention-Detection-
+
+
+📷 Usage
+1. Run Attention Detection (Webcam)
+  python predict_webcam.py
+
+2. Train Your Own Model
+  python train_model.py
+
+3. Test the Model
+  python test.py
+
+4. Save a Photo from Webcam
+  python save_photo.py
